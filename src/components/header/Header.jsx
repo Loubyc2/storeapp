@@ -16,27 +16,31 @@ function Header() {
     }
     return (
         <div className="header">
-            <div className="header-top">
-                <div className="header-menu">
+            <div className="header__top">
+                <div className="header__menu">
                     <AiIcons.AiOutlineMenu size={24} onClick={handleShow} />
                     <p style={{ fontSize: ".8rem" }}>Menu</p>
                 </div>
-                <div className={showMenu ? "header-menu-content" : "hide-menu"}>
-                    <div className="header-menu-top">
+                <div className={showMenu ? "header__menu-content" : "hide-menu"}>
+                    <div className="header__menu-top">
                         <h4>Menú</h4>
                         <AiOutlineCloseCircle onClick={handleShow} />
                     </div>
-                    <h6>I m the menu content</h6>
-                    <h6>I m the menu content</h6>
-                    <h6>I m the menu content</h6>
-                    <h6>I m the menu content</h6>
-                    <h6>I m the menu content</h6>
-                    <h6>I m the menu content</h6>
+                    <div className="header___menu-links">
+                        <Link to="/"> <p>Explorar colecciones</p> </Link>
+                        <Link to="/"> <p>Encuentrar tu pantallas</p> </Link>
+                        <Link to="/"> <p>Inspírate</p> </Link>
+                        <Link to="/"> <p>Edición limitada</p> </Link>
+                        <Link to="/"> <p>Ayuda</p> </Link>
+                        <Link to="/"> <p>Sobre nosotros</p> </Link>
+                        <Link to="/"> <p>Iniciar sesión</p> </Link>
+
+                    </div>
                 </div>
-                <Link to="/" className="header-logo">
+                <Link to="/" className="header__logo">
                     <h6>Louby Design</h6>
                 </Link>
-                <div className="header-right">
+                <div className="header__right">
                     <Link to="/"><AiIcons.AiOutlineUser size={24} />
                         <p style={{ fontSize: ".8rem" }}>Cuenta</p>
                     </Link>
@@ -46,7 +50,7 @@ function Header() {
                 </div>
             </div>
 
-            <div className="header-search">
+            <div className="header__search">
                 <AiIcons.AiOutlineSearch size={20} />
                 <input type="text" name="" id="" placeholder="Buscar productos" />
             </div>
