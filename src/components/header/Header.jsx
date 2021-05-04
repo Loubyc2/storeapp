@@ -21,7 +21,7 @@ function Header() {
                     <AiIcons.AiOutlineMenu size={24} onClick={handleShow} />
                     <p style={{ fontSize: ".8rem" }}>Menu</p>
                 </div>
-                <div className={showMenu ? "header__menu-content" : "active"}>
+                <div className={showMenu ? "active" : "header__menu-content"}>
                     <div className="header__menu-top">
                         <h4>Menú</h4>
                         <AiOutlineCloseCircle onClick={handleShow} />
