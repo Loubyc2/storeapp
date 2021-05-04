@@ -4,9 +4,9 @@ import "./Footer.css"
 
 function Footer() {
     return (
-        <div className="footer">
+        <footer className="footer">
             &copy; 2021 Lb Design
-        </div>
+        </footer>
     )
 }
 
