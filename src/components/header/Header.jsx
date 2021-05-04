@@ -21,7 +21,7 @@ function Header() {
                     <AiIcons.AiOutlineMenu size={24} onClick={handleShow} />
                     <p style={{ fontSize: ".8rem" }}>Menu</p>
                 </div>
-                <div className={showMenu ? "header__menu-content" : "hide-menu"}>
+                <div className={showMenu ? "header__menu-content" : "active"}>
                     <div className="header__menu-top">
                         <h4>Menú</h4>
                         <AiOutlineCloseCircle onClick={handleShow} />
@@ -34,6 +34,32 @@ function Header() {
                         <Link to="/"> <p>Ayuda</p> </Link>
                         <Link to="/"> <p>Sobre nosotros</p> </Link>
                         <Link to="/"> <p>Iniciar sesión</p> </Link>
+
+                    </div>
+                    <div className="header__bestselling">
+                        <Link to="/">
+                            <div className="header__bestselling-card">
+                                <img src="./images/bestselling/menu-bestselling-1.webp" alt="bestselling-img" />
+                                <h4>Explorar los más vendidos</h4>
+                            </div>
+                        </Link>
+                        <Link to="/">
+                            <div className="header__bestselling-card">
+                                <img src="./images/bestselling/menu-bestselling-2.webp" alt="bestselling-img" />
+                                <h4>Colecciones destacadas</h4>
+                            </div>
+                        </Link>
+                        <Link to="/">
+                            <div className="header__bestselling-card">
+                                <img src="./images/bestselling/menu-bestselling-3.webp" alt="bestselling-img" />
+                                <h4>Delicias geeks</h4>
+                            </div></Link>
+                        <Link to="/">
+                            <div className="header__bestselling-card">
+                                <img src="./images/bestselling/menu-bestselling-4.webp" alt="bestselling-img" />
+                                <h4>Mejores obras de arte especiales</h4>
+                            </div>
+                        </Link>
 
                     </div>
                 </div>
