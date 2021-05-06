@@ -33,7 +33,7 @@ function Header() {
                         <Link to="/"> <p>Edición limitada</p> </Link>
                         <Link to="/"> <p>Ayuda</p> </Link>
                         <Link to="/"> <p>Sobre nosotros</p> </Link>
-                        <Link to="/signin"> <p>Iniciar sesión</p> </Link>
+                        <Link to="/signin" onClick={() => setSwhowMenu(!showMenu)}> <p>Iniciar sesión</p> </Link>
 
                     </div>
                     <div className="header__bestselling">
